@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self-Assessment Quiz | Cybersecurity Basics</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo">Cybersecurity Basics</a>
+      <nav id="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topics/passwords.html">Passwords</a></li>
+          <li><a href="topics/phishing.html">Phishing</a></li>
+          <li><a href="topics/malware.html">Malware</a></li>
+          <li><a href="key-concepts.html">Key Concepts</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="page-heading">
+      <h1>Self-Assessment Quiz</h1>
+      <p>Five questions covering passwords, phishing, and malware. A score of 70%
+        or higher is a pass.</p>
+    </section>
+
+    <div id="quiz-results">
+      <p id="result-status" class="score-big">&mdash;</p>
+      <p id="result-score">You scored 0 out of 5</p>
+    </div>
+
+    <form id="quiz-form">
+
+      <!-- Question 1: fill in the blank -->
+      <fieldset>
+        <legend>Question 1</legend>
+        <p>Fill in the blank: A fraudulent message that pretends to be from a
+          trusted sender in order to steal information is called
+          ____________.</p>
+        <input type="text" id="q1-input" placeholder="Type your answer" />
+        <div class="q-feedback" id="q1-feedback"></div>
+      </fieldset>
+
+      <!-- Question 2: multiple choice, one correct answer -->
+      <fieldset>
+        <legend>Question 2</legend>
+        <p>Which authentication factor does a fingerprint scan belong to?</p>
+        <div class="opt"><input type="radio" name="q2" id="q2a" value="a"><label for="q2a"> Something you know</label></div>
+        <div class="opt"><input type="radio" name="q2" id="q2b" value="b"><label for="q2b"> Something you are</label></div>
+        <div class="opt"><input type="radio" name="q2" id="q2c" value="c"><label for="q2c"> Something you have</label></div>
+        <div class="q-feedback" id="q2-feedback"></div>
+      </fieldset>
+
+      <!-- Question 3: multiple choice, one correct answer -->
+      <fieldset>
+        <legend>Question 3</legend>
+        <p>Which malware type encrypts your files and demands payment to unlock them?</p>
+        <div class="opt"><input type="radio" name="q3" id="q3a" value="a"><label for="q3a"> Spyware</label></div>
+        <div class="opt"><input type="radio" name="q3" id="q3b" value="b"><label for="q3b"> Worm</label></div>
+        <div class="opt"><input type="radio" name="q3" id="q3c" value="c"><label for="q3c"> Ransomware</label></div>
+        <div class="q-feedback" id="q3-feedback"></div>
+      </fieldset>
+
+      <!-- Question 4: multiple choice, one correct answer -->
+      <fieldset>
+        <legend>Question 4</legend>
+        <p>What generally makes a password stronger?</p>
+        <div class="opt"><input type="radio" name="q4" id="q4a" value="a"><label for="q4a"> Greater length, like a multi-word passphrase</label></div>
+        <div class="opt"><input type="radio" name="q4" id="q4b" value="b"><label for="q4b"> Changing it every 30 days</label></div>
+        <div class="opt"><input type="radio" name="q4" id="q4c" value="c"><label for="q4c"> Using the same password everywhere</label></div>
+        <div class="q-feedback" id="q4-feedback"></div>
+      </fieldset>
+
+      <!-- Question 5: select all that apply -->
+      <fieldset>
+        <legend>Question 5</legend>
+        <p>Select all that are common phishing red flags:</p>
+        <div class="opt"><input type="checkbox" id="q5a"><label for="q5a"> A sender address that doesn't quite match the real domain</label></div>
+        <div class="opt"><input type="checkbox" id="q5b"><label for="q5b"> A message that arrives during business hours</label></div>
+        <div class="opt"><input type="checkbox" id="q5c"><label for="q5c"> Urgent language about account suspension</label></div>
+        <div class="opt"><input type="checkbox" id="q5d"><label for="q5d"> A request to bypass normal verification steps</label></div>
+        <div class="q-feedback" id="q5-feedback"></div>
+      </fieldset>
+
+      <div class="quiz-actions">
+        <button type="submit" class="btn">Submit answers</button>
+        <button type="button" class="btn secondary" id="reset-btn">Reset quiz</button>
+      </div>
+    </form>
+
+  </main>
+
+  <footer id="site-footer">
+    <div class="wrap">
+      <p>This site is a class project for IT 3203, built as part of a course
+        assignment at
+        <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">ksuweb.github.io/IT3203</a>.</p>
+      <p>&copy; 2026 Cybersecurity Basics.</p>
+    </div>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
