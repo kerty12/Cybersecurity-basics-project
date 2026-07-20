@@ -1,0 +1,107 @@
+<!--
+  topics/phishing.html — Phishing & Social Engineering
+  One of the three main content pages linked from the home page cards
+  and the site nav. Paths in this file go up one folder ("../") to
+  reach css/, images/, and the top-level pages.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phishing &amp; Social Engineering | Cybersecurity Basics</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Site header: logo + nav links, reused on every page -->
+  <header id="site-header">
+    <div class="wrap">
+      <a href="../index.html" class="logo">Cybersecurity Basics</a>
+      <nav id="site-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="passwords.html">Passwords</a></li>
+          <li><a href="phishing.html" class="active">Phishing</a></li>
+          <li><a href="malware.html">Malware</a></li>
+          <li><a href="../key-concepts.html">Key Concepts</a></li>
+          <li><a href="../references.html">References</a></li>
+          <li><a href="../quiz.html">Quiz</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="page-heading">
+      <img src="../images/icon-phish.svg" alt="Envelope icon" style="width:48px;height:48px;" />
+      <h1>Phishing &amp; Social Engineering</h1>
+      <p>The tricks behind fake emails and texts, and the red flags that
+        give them away before you click.</p>
+    </section>
+
+    <section>
+      <h2>What phishing is</h2>
+      <p>Phishing is a message that pretends to be from someone you trust —
+        a bank, a coworker, a delivery service — in order to trick you into
+        handing over information or clicking a malicious link. It's a form
+        of social engineering: attacking people's trust instead of a
+        computer's defenses.</p>
+    </section>
+
+    <section>
+      <h2>Common red flags</h2>
+      <table>
+        <caption>Signs a message might be phishing</caption>
+        <thead>
+          <tr>
+            <th scope="col">Red flag</th>
+            <th scope="col">What to check</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Red flag">Mismatched sender</td>
+            <td data-label="What to check">Does the email address actually match the real company's domain?</td>
+          </tr>
+          <tr>
+            <td data-label="Red flag">Urgent language</td>
+            <td data-label="What to check">"Act now or your account will be suspended" is designed to rush you</td>
+          </tr>
+          <tr>
+            <td data-label="Red flag">Unexpected links or attachments</td>
+            <td data-label="What to check">Hover over links first; don't open attachments you weren't expecting</td>
+          </tr>
+          <tr>
+            <td data-label="Red flag">Requests to bypass normal steps</td>
+            <td data-label="What to check">A "manager" asking you to skip verification is a classic pretext</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>What to do instead</h2>
+      <ul>
+        <li>Go to the company's site directly rather than clicking the link in the message.</li>
+        <li>Verify unusual requests through a second channel, like a phone call.</li>
+        <li>Report suspicious messages to your email provider or IT department.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Site footer: course credit + copyright, reused on every page -->
+  <footer id="site-footer">
+    <div class="wrap">
+      <p>This site is a class project for IT 3203, built as part of a course
+        assignment at
+        <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">ksuweb.github.io/IT3203</a>.</p>
+      <p>&copy; 2026 Cybersecurity Basics.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
