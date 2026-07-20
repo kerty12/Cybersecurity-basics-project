@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Padlock icon">
-  <rect x="10" y="22" width="28" height="20" rx="3" fill="#2e5395"/>
-  <path d="M16 22v-6a8 8 0 0 1 16 0v6" fill="none" stroke="#2e5395" stroke-width="4"/>
-  <circle cx="24" cy="31" r="3" fill="#ffffff"/>
-  <rect x="22.5" y="31" width="3" height="7" fill="#ffffff"/>
-</svg>
